@@ -1,10 +1,17 @@
 const express = require("express");
 const morgan = require("morgan");
-const usersDb = require("./db/db");
+const usersDb = require("./db/dbUser");
+const dbProduct = require("./db/dbProduct");
+const multer = require("multer");
+const path = require("path");
+const productsDb = require("./db/dbProduct");
+const cors = require("cors");
 
 const app = express();
 app.use(express.json());
 app.use(morgan("dev"));
+app.use("/uploads", express.static("uploads"));
+app.use(cors());
 
 // USERS LIST
 app.get("/api/users", (req, res) => {
@@ -54,6 +61,33 @@ app.post("/api/login", (req, res) => {
       Password: password,
     },
   });
+});
+
+// --------------------- PRODUCTS ---------------------
+
+// Storage
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, "uploads/"); // Directorio donde se guardarán las imágenes
+  },
+  filename: function (req, file, cb) {
+    const fileName =
+      file.fieldname + "-" + Date.now() + path.extname(file.originalname);
+    cb(null, fileName);
+  },
+});
+
+const upload = multer({ storage: storage });
+
+// Image Route
+app.post("/api/product/image", upload.single("imagen"), (req, res) => {
+  const imageUrl = `http://localhost:3000/uploads/${req.file.filename}`;
+  res.json({ imageUrl });
+});
+
+app.get("/api/products", (req, res) => {
+  console.log(productsDb.samsung);
+  res.json(productsDb);
 });
 
 app.listen(3000);
