@@ -23,14 +23,14 @@ function App() {
         <div className="h-[60%]">
           <img
             className="w-full h-full"
-            src={productData?.Samsung[0].image}
+            src={productData?.Samsung[0].images.mint.principal}
             alt=""
           />
         </div>
 
         <div className="h-[40%] px-5">
-          <p className="mb-5">{productData?.Samsung[0].description}</p>
-          <span>{`$ ${productData?.Samsung[0].price}`} </span>
+          <p className="mb-5">{productData?.Samsung[3].description}</p>
+          <span>{`$ ${productData?.Samsung[3].price}`} </span>
         </div>
       </div>
     </div>

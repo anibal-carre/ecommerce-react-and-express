@@ -10,7 +10,22 @@ const productsDb = {
       outstanding: false,
       ranking: 3,
       promotion: true,
-      image: "http://localhost:3000/uploads/s20fe.png",
+      images: {
+        principal: "http://localhost:3000/uploads/s20fe/s20fe.png",
+        image1: "http://localhost:3000/uploads/s20fe/s20fe2.png",
+        image2: "http://localhost:3000/uploads/s20fe/s20fe3.png",
+        lavander: {
+          principal:
+            "http://localhost:3000/uploads/s20fe/lavander/lavander1.png",
+          image1: "http://localhost:3000/uploads/s20fe/lavander/lavander2.png",
+          image2: "http://localhost:3000/uploads/s20fe/lavander/lavander3.png",
+        },
+        mint: {
+          principal: "http://localhost:3000/uploads/s20fe/mint/mint1.png",
+          image1: "http://localhost:3000/uploads/s20fe/mint/mint2.png",
+          image2: "http://localhost:3000/uploads/s20fe/mint/mint3.png",
+        },
+      },
     },
     {
       id: 2,
@@ -25,14 +40,29 @@ const productsDb = {
     },
     {
       id: 3,
-      name: "Samsung Galaxy S23",
+      name: "Samsung Galaxy S23 128 GB",
       price: 5000,
       description:
         "The Samsung Galaxy S23 specs are top-notch including a Snapdragon 8 Gen 2 chipset, 8GB RAM coupled with 128/256GB storage, and a 3900mAh battery. The phone sports a 6.1-inch Dynamic AMOLED display with an adaptive 120Hz refresh rate.",
       outstanding: false,
       ranking: 3,
       promotion: true,
-      image: "http://localhost:3000/uploads/s23.png",
+      image: "http://localhost:3000/uploads/s23/s23.png",
+    },
+    {
+      id: 4,
+      name: "Samsung Galaxy Z Fold4 512 GB",
+      price: 12000,
+      description:
+        "The Samsung Galaxy Z Fold 4 is, without a doubt, one of the most advanced and comprehensive Android smartphones available on the market, thanks to its rich equipment and advanced multimedia features. It has a large 7.6-inch display with a resolution of 2176x1812 pixels. The features offered by the Samsung Galaxy Z Fold 4 are many and innovative. Starting with 5G, which allows data transfer and excellent internet browsing. We emphasize the excellent internal memory of 1000 GB but without the possibility of expansion.",
+      outstanding: false,
+      ranking: 5,
+      promotion: false,
+      images: {
+        principal: "http://localhost:3000/uploads/galaxyfold/galaxyfold.png",
+        image1: "http://localhost:3000/uploads/galaxyfold/galaxyfold2.png",
+        image2: "http://localhost:3000/uploads/galaxyfold/galaxyfold3.png",
+      },
     },
   ],
 };
