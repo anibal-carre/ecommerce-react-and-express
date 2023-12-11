@@ -1,5 +1,35 @@
 const productsDb = {
-  Iphone: {},
+  Iphone: [
+    {
+      id: 1,
+      name: "iPhone 13 PRO 512 GB",
+      price: 6000,
+      description:
+        "What is the physical description of the iPhone 13 ProiPhone 13 Pro Technical Specifications. The iPhone 13 Pro display has rounded corners that follow a beautiful curved design, and these corners are within a standard rectangle. When measured as a standard rectangular shape, the screen is diagonally actual viewable area is less.",
+      outstanding: false,
+      ranking: 4,
+      promotion: true,
+      images: {
+        principal: "http://localhost:3000/uploads/iphone13/iphone13.png",
+        image1: "http://localhost:3000/uploads/iphone13/iphone132.png",
+
+        blue: {
+          principal: "http://localhost:3000/uploads/iphone13/blue/blue1.png",
+          image1: "http://localhost:3000/uploads/iphone13/blue/blue2.png",
+        },
+        yellow: {
+          principal:
+            "http://localhost:3000/uploads/iphone13/yellow/yellow1.png",
+          image1: "http://localhost:3000/uploads/iphone13/yellow/yellow2.png",
+        },
+        silver: {
+          principal:
+            "http://localhost:3000/uploads/iphone13/silver/silver1.png",
+          image1: "http://localhost:3000/uploads/iphone13/silver/silver2.png",
+        },
+      },
+    },
+  ],
   Samsung: [
     {
       id: 1,
