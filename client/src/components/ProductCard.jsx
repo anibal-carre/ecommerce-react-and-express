@@ -1,6 +1,6 @@
 const ProductCard = ({ data }) => {
   return (
-    <div className="border flex flex-col items-center w-[180px] h-[370px] rounded-[2px] shadow-sm shadow-black cursor-pointer hover:scale-105 transition-all delay-75 p-4">
+    <div className="border flex flex-col items-center bg-white w-[180px] h-[370px] rounded-[2px] shadow-sm shadow-black cursor-pointer hover:scale-105 transition-all delay-75 p-4">
       <div className="flex justify-center items-center">
         <img
           className="w-[127px] h-[150px]"

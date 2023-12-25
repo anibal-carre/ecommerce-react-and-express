@@ -13,7 +13,7 @@ const HeroSection = () => {
 
   console.log(data);
   return (
-    <section className="w-full h-auto min-h-screen p-4 md:p-8 flex flex-col items-center">
+    <section className="w-full h-auto min-h-screen p-4 bg-slate-100 md:p-8 flex flex-col items-center">
       <div className="max-w-[1800px] w-full h-full flex gap-10 justify-center mb-20">
         <BannerSection />
       </div>

@@ -1,6 +1,7 @@
 import CategorySection from "../CategorySection";
 import HeroSection from "../HeroSection";
 import HomeHeader from "../HomeHeader";
+import HomeFooter from "./HomeFooter";
 
 const Home = () => {
   return (
@@ -8,6 +9,7 @@ const Home = () => {
       <HomeHeader />
       <CategorySection />
       <HeroSection />
+      <HomeFooter />
     </div>
   );
 };

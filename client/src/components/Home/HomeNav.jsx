@@ -4,14 +4,18 @@ import UserIcon from "../icons/UserIcon";
 
 const HomeNav = () => {
   return (
-    <nav className="w-full max-w-[1100px] h-20 flex justify-between">
+    <nav className="w-full max-w-[1100px] h-[70px] flex justify-between">
       <div className="w-[20%] flex justify-center items-center">
         <span className="font-bold text-[20px] text-[#ff8800] cursor-pointer">
           PHONE SHOP
         </span>
       </div>
       <div className="w-[45%] flex items-center">
-        <input className="w-[90%] h-12 border relative" type="text" />
+        <input
+          className="w-[90%] h-12 border relative px-4 text-[15px]"
+          type="text"
+          placeholder="Encontre celulares e tablets seminovos..."
+        />
 
         <span className="relative right-8 text-zinc-400 text-[20px] cursor-pointer">
           <SearchIcon />
