@@ -141,7 +141,7 @@ const HomeFooter = () => {
 
             <div className="flex flex-col gap-3">
               <input
-                className="w-[260px] h-[34px] rounded-[3px] border"
+                className="w-[260px] h-[34px] px-3 rounded-[3px] border"
                 type="text"
               />
               <button className="w-[95px] h-[32px] rounded-[3px] bg-blue-400 text-white ">
