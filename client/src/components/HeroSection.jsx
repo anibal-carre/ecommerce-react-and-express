@@ -43,9 +43,9 @@ const HeroSection = () => {
           </div>
           <div className="w-full max-w-[1300px] h-auto flex justify-evenly p-5 mb-10">
             <ProductCard data={data?.Iphone[0]} />
-            <ProductCard data={data?.Iphone[0]} />
-            <ProductCard data={data?.Iphone[0]} />
-            <ProductCard data={data?.Iphone[0]} />
+            <ProductCard data={data?.Iphone[1]} />
+            <ProductCard data={data?.Iphone[2]} />
+            <ProductCard data={data?.Iphone[3]} />
           </div>
           <div className="w-full max-w-[1300px] flex justify-start px-10 xl:px-16">
             <span className="font-bold text-[20px] font-sans cursor-pointer">
@@ -53,10 +53,10 @@ const HeroSection = () => {
             </span>
           </div>
           <div className="w-full max-w-[1300px] h-auto flex justify-evenly p-5 mb-10">
-            <ProductCard data={data?.Iphone[0]} />
-            <ProductCard data={data?.Iphone[0]} />
-            <ProductCard data={data?.Iphone[0]} />
-            <ProductCard data={data?.Iphone[0]} />
+            <ProductCard data={data?.Motorola[0]} />
+            <ProductCard data={data?.Motorola[1]} />
+            <ProductCard data={data?.Motorola[2]} />
+            <ProductCard data={data?.Motorola[3]} />
           </div>
         </div>
       </div>
