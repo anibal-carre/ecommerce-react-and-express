@@ -11,22 +11,28 @@ const productsDb = {
       ranking: 4,
       promotion: true,
       images: {
-        principal: "http://localhost:3000/uploads/iphone13/iphone13.png",
-        image1: "http://localhost:3000/uploads/iphone13/iphone132.png",
+        principal:
+          "https://ecommerce-backend-oypk.onrender.com/uploads/iphone13/iphone13.png",
+        image1:
+          "https://ecommerce-backend-oypk.onrender.com/uploads/iphone13/iphone132.png",
 
         blue: {
-          principal: "http://localhost:3000/uploads/iphone13/blue/blue1.png",
-          image1: "http://localhost:3000/uploads/iphone13/blue/blue2.png",
+          principal:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/iphone13/blue/blue1.png",
+          image1:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/iphone13/blue/blue2.png",
         },
         yellow: {
           principal:
-            "http://localhost:3000/uploads/iphone13/yellow/yellow1.png",
-          image1: "http://localhost:3000/uploads/iphone13/yellow/yellow2.png",
+            "https://ecommerce-backend-oypk.onrender.com/uploads/iphone13/yellow/yellow1.png",
+          image1:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/iphone13/yellow/yellow2.png",
         },
         silver: {
           principal:
-            "http://localhost:3000/uploads/iphone13/silver/silver1.png",
-          image1: "http://localhost:3000/uploads/iphone13/silver/silver2.png",
+            "https://ecommerce-backend-oypk.onrender.com/uploads/iphone13/silver/silver1.png",
+          image1:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/iphone13/silver/silver2.png",
         },
       },
     },
@@ -41,24 +47,34 @@ const productsDb = {
       ranking: 4,
       promotion: true,
       images: {
-        principal: "http://localhost:3000/uploads/iphone12/iphone.png",
-        image1: "http://localhost:3000/uploads/iphone12/iphoneall.png",
+        principal:
+          "https://ecommerce-backend-oypk.onrender.com/uploads/iphone12/iphone.png",
+        image1:
+          "https://ecommerce-backend-oypk.onrender.com/uploads/iphone12/iphoneall.png",
 
         blue: {
-          principal: "http://localhost:3000/uploads/iphone12/blue/blue.png",
-          image1: "http://localhost:3000/uploads/iphone12/blue/iphoneall.png",
+          principal:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/iphone12/blue/blue.png",
+          image1:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/iphone12/blue/iphoneall.png",
         },
         green: {
-          principal: "http://localhost:3000/uploads/iphone12/green/green.png",
-          image1: "http://localhost:3000/uploads/iphone12/green/iphoneall.png",
+          principal:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/iphone12/green/green.png",
+          image1:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/iphone12/green/iphoneall.png",
         },
         purple: {
-          principal: "http://localhost:3000/uploads/iphone12/purple/purple.png",
-          image1: "http://localhost:3000/uploads/iphone12/purple/iphoneall.png",
+          principal:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/iphone12/purple/purple.png",
+          image1:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/iphone12/purple/iphoneall.png",
         },
         red: {
-          principal: "http://localhost:3000/uploads/iphone12/red/red.png",
-          image1: "http://localhost:3000/uploads/iphone12/red/iphoneall.png",
+          principal:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/iphone12/red/red.png",
+          image1:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/iphone12/red/iphoneall.png",
         },
       },
     },
@@ -73,19 +89,28 @@ const productsDb = {
       ranking: 4,
       promotion: true,
       images: {
-        principal: "http://localhost:3000/uploads/iphone11/iphone11.png",
-        image1: "http://localhost:3000/uploads/iphone11/iphone111.png",
-        image2: "http://localhost:3000/uploads/iphone11/iphone112.png",
+        principal:
+          "https://ecommerce-backend-oypk.onrender.com/uploads/iphone11/iphone11.png",
+        image1:
+          "https://ecommerce-backend-oypk.onrender.com/uploads/iphone11/iphone111.png",
+        image2:
+          "https://ecommerce-backend-oypk.onrender.com/uploads/iphone11/iphone112.png",
 
         golden: {
-          principal: "http://localhost:3000/uploads/iphone11/golden/golden.png",
-          image1: "http://localhost:3000/uploads/iphone11/golden/golden1.png",
-          image2: "http://localhost:3000/uploads/iphone11/golden/golden2.png",
+          principal:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/iphone11/golden/golden.png",
+          image1:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/iphone11/golden/golden1.png",
+          image2:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/iphone11/golden/golden2.png",
         },
         silver: {
-          principal: "http://localhost:3000/uploads/iphone11/silver/silver.png",
-          image1: "http://localhost:3000/uploads/iphone11/silver/silver1.png",
-          image2: "http://localhost:3000/uploads/iphone11/silver/silver2.png",
+          principal:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/iphone11/silver/silver.png",
+          image1:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/iphone11/silver/silver1.png",
+          image2:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/iphone11/silver/silver2.png",
         },
       },
     },
@@ -100,24 +125,36 @@ const productsDb = {
       ranking: 3,
       promotion: true,
       images: {
-        principal: "http://localhost:3000/uploads/iphonexr/iphonexr.png",
-        image1: "http://localhost:3000/uploads/iphonexr/iphonexr1.png",
-        image2: "http://localhost:3000/uploads/iphonexr/iphonexr2.png",
+        principal:
+          "https://ecommerce-backend-oypk.onrender.com/uploads/iphonexr/iphonexr.png",
+        image1:
+          "https://ecommerce-backend-oypk.onrender.com/uploads/iphonexr/iphonexr1.png",
+        image2:
+          "https://ecommerce-backend-oypk.onrender.com/uploads/iphonexr/iphonexr2.png",
 
         red: {
-          principal: "http://localhost:3000/uploads/iphonexr/red/red.png",
-          image1: "http://localhost:3000/uploads/iphonexr/red/red1.png",
-          image2: "http://localhost:3000/uploads/iphonexr/red/red2.png",
+          principal:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/iphonexr/red/red.png",
+          image1:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/iphonexr/red/red1.png",
+          image2:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/iphonexr/red/red2.png",
         },
         coral: {
-          principal: "http://localhost:3000/uploads/iphonexr/coral/coral.png",
-          image1: "http://localhost:3000/uploads/iphonexr/coral/coral1.png",
-          image2: "http://localhost:3000/uploads/iphonexr/coral/coral2.png",
+          principal:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/iphonexr/coral/coral.png",
+          image1:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/iphonexr/coral/coral1.png",
+          image2:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/iphonexr/coral/coral2.png",
         },
         blue: {
-          principal: "http://localhost:3000/uploads/iphonexr/blue/blue.png",
-          image1: "http://localhost:3000/uploads/iphonexr/blue/blue1.png",
-          image2: "http://localhost:3000/uploads/iphonexr/blue/blue2.png",
+          principal:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/iphonexr/blue/blue.png",
+          image1:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/iphonexr/blue/blue1.png",
+          image2:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/iphonexr/blue/blue2.png",
         },
       },
     },
@@ -134,19 +171,27 @@ const productsDb = {
       ranking: 3,
       promotion: true,
       images: {
-        principal: "http://localhost:3000/uploads/s20fe/s20fe.png",
-        image1: "http://localhost:3000/uploads/s20fe/s20fe2.png",
-        image2: "http://localhost:3000/uploads/s20fe/s20fe3.png",
+        principal:
+          "https://ecommerce-backend-oypk.onrender.com/uploads/s20fe/s20fe.png",
+        image1:
+          "https://ecommerce-backend-oypk.onrender.com/uploads/s20fe/s20fe2.png",
+        image2:
+          "https://ecommerce-backend-oypk.onrender.com/uploads/s20fe/s20fe3.png",
         lavander: {
           principal:
-            "http://localhost:3000/uploads/s20fe/lavander/lavander1.png",
-          image1: "http://localhost:3000/uploads/s20fe/lavander/lavander2.png",
-          image2: "http://localhost:3000/uploads/s20fe/lavander/lavander3.png",
+            "https://ecommerce-backend-oypk.onrender.com/uploads/s20fe/lavander/lavander1.png",
+          image1:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/s20fe/lavander/lavander2.png",
+          image2:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/s20fe/lavander/lavander3.png",
         },
         mint: {
-          principal: "http://localhost:3000/uploads/s20fe/mint/mint1.png",
-          image1: "http://localhost:3000/uploads/s20fe/mint/mint2.png",
-          image2: "http://localhost:3000/uploads/s20fe/mint/mint3.png",
+          principal:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/s20fe/mint/mint1.png",
+          image1:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/s20fe/mint/mint2.png",
+          image2:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/s20fe/mint/mint3.png",
         },
       },
     },
@@ -161,9 +206,12 @@ const productsDb = {
       ranking: 5,
       promotion: true,
       images: {
-        principal: "http://localhost:3000/uploads/s23ultra/s23ultra.png",
-        image1: "http://localhost:3000/uploads/s23ultra/s23ultra1.png",
-        image2: "http://localhost:3000/uploads/s23ultra/s23ultra2.png",
+        principal:
+          "https://ecommerce-backend-oypk.onrender.com/uploads/s23ultra/s23ultra.png",
+        image1:
+          "https://ecommerce-backend-oypk.onrender.com/uploads/s23ultra/s23ultra1.png",
+        image2:
+          "https://ecommerce-backend-oypk.onrender.com/uploads/s23ultra/s23ultra2.png",
       },
     },
     {
@@ -177,18 +225,27 @@ const productsDb = {
       ranking: 5,
       promotion: true,
       images: {
-        principal: "http://localhost:3000/uploads/s23/s23.png",
-        image1: "http://localhost:3000/uploads/s23/s231.png",
-        image2: "http://localhost:3000/uploads/s23/s232.png",
+        principal:
+          "https://ecommerce-backend-oypk.onrender.com/uploads/s23/s23.png",
+        image1:
+          "https://ecommerce-backend-oypk.onrender.com/uploads/s23/s231.png",
+        image2:
+          "https://ecommerce-backend-oypk.onrender.com/uploads/s23/s232.png",
         green: {
-          principal: "http://localhost:3000/uploads/s23/creme/creme.png",
-          image1: "http://localhost:3000/uploads/s23/creme/creme1.png",
-          image2: "http://localhost:3000/uploads/s23/creme/creme2.png",
+          principal:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/s23/creme/creme.png",
+          image1:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/s23/creme/creme1.png",
+          image2:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/s23/creme/creme2.png",
         },
         black: {
-          principal: "http://localhost:3000/uploads/s23/black/black.png",
-          image1: "http://localhost:3000/uploads/s23/black/black1.png",
-          image2: "http://localhost:3000/uploads/s23/black/black2.png",
+          principal:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/s23/black/black.png",
+          image1:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/s23/black/black1.png",
+          image2:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/s23/black/black2.png",
         },
       },
     },
@@ -203,9 +260,12 @@ const productsDb = {
       ranking: 5,
       promotion: false,
       images: {
-        principal: "http://localhost:3000/uploads/galaxyfold/galaxyfold.png",
-        image1: "http://localhost:3000/uploads/galaxyfold/galaxyfold2.png",
-        image2: "http://localhost:3000/uploads/galaxyfold/galaxyfold3.png",
+        principal:
+          "https://ecommerce-backend-oypk.onrender.com/uploads/galaxyfold/galaxyfold.png",
+        image1:
+          "https://ecommerce-backend-oypk.onrender.com/uploads/galaxyfold/galaxyfold2.png",
+        image2:
+          "https://ecommerce-backend-oypk.onrender.com/uploads/galaxyfold/galaxyfold3.png",
       },
     },
   ],
@@ -221,9 +281,12 @@ const productsDb = {
       ranking: 3,
       promotion: false,
       images: {
-        principal: "http://localhost:3000/uploads/motog/motog1.png",
-        image1: "http://localhost:3000/uploads/motog/motog2.png",
-        image2: "http://localhost:3000/uploads/motog/motog3.png",
+        principal:
+          "https://ecommerce-backend-oypk.onrender.com/uploads/motog/motog1.png",
+        image1:
+          "https://ecommerce-backend-oypk.onrender.com/uploads/motog/motog2.png",
+        image2:
+          "https://ecommerce-backend-oypk.onrender.com/uploads/motog/motog3.png",
       },
     },
     {
@@ -237,13 +300,19 @@ const productsDb = {
       ranking: 4,
       promotion: false,
       images: {
-        principal: "http://localhost:3000/uploads/onevision/onevision1.png",
-        image1: "http://localhost:3000/uploads/onevision/onevision2.png",
-        image2: "http://localhost:3000/uploads/onevision/onevision3.png",
+        principal:
+          "https://ecommerce-backend-oypk.onrender.com/uploads/onevision/onevision1.png",
+        image1:
+          "https://ecommerce-backend-oypk.onrender.com/uploads/onevision/onevision2.png",
+        image2:
+          "https://ecommerce-backend-oypk.onrender.com/uploads/onevision/onevision3.png",
         safira: {
-          principal: "http://localhost:3000/uploads/onevision/onevision1.png",
-          image1: "http://localhost:3000/uploads/onevision/safira/safira1.png",
-          image2: "http://localhost:3000/uploads/onevision/safira/safira2.png",
+          principal:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/onevision/onevision1.png",
+          image1:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/onevision/safira/safira1.png",
+          image2:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/onevision/safira/safira2.png",
         },
       },
     },
@@ -258,20 +327,27 @@ const productsDb = {
       ranking: 3,
       promotion: false,
       images: {
-        principal: "http://localhost:3000/uploads/edge20/edge20.png",
-        image1: "http://localhost:3000/uploads/edge20/edge201.png",
-        image2: "http://localhost:3000/uploads/edge20/edge202.png",
+        principal:
+          "https://ecommerce-backend-oypk.onrender.com/uploads/edge20/edge20.png",
+        image1:
+          "https://ecommerce-backend-oypk.onrender.com/uploads/edge20/edge201.png",
+        image2:
+          "https://ecommerce-backend-oypk.onrender.com/uploads/edge20/edge202.png",
         green: {
           principal:
-            "http://localhost:3000/uploads/edge20/green/edge20green.png",
-          image1: "http://localhost:3000/uploads/edge20/green/edge20green1.png",
-          image2: "http://localhost:3000/uploads/edge20/green/edge20green2.png",
+            "https://ecommerce-backend-oypk.onrender.com/uploads/edge20/green/edge20green.png",
+          image1:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/edge20/green/edge20green1.png",
+          image2:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/edge20/green/edge20green2.png",
         },
         black: {
           principal:
-            "http://localhost:3000/uploads/edge20/black/edge20black.png",
-          image1: "http://localhost:3000/uploads/edge20/black/edge20black1.png",
-          image2: "http://localhost:3000/uploads/edge20/black/edge20black2.png",
+            "https://ecommerce-backend-oypk.onrender.com/uploads/edge20/black/edge20black.png",
+          image1:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/edge20/black/edge20black1.png",
+          image2:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/edge20/black/edge20black2.png",
         },
       },
     },
@@ -286,18 +362,27 @@ const productsDb = {
       ranking: 3,
       promotion: false,
       images: {
-        principal: "http://localhost:3000/uploads/g22/g22.png",
-        image1: "http://localhost:3000/uploads/g22/g221.png",
-        image2: "http://localhost:3000/uploads/g22/g222.png",
+        principal:
+          "https://ecommerce-backend-oypk.onrender.com/uploads/g22/g22.png",
+        image1:
+          "https://ecommerce-backend-oypk.onrender.com/uploads/g22/g221.png",
+        image2:
+          "https://ecommerce-backend-oypk.onrender.com/uploads/g22/g222.png",
         green: {
-          principal: "http://localhost:3000/uploads/g22/green/green.png",
-          image1: "http://localhost:3000/uploads/g22/green/green1.png",
-          image2: "http://localhost:3000/uploads/g22/green/green2.png",
+          principal:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/g22/green/green.png",
+          image1:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/g22/green/green1.png",
+          image2:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/g22/green/green2.png",
         },
         black: {
-          principal: "http://localhost:3000/uploads/g22/black/black.png",
-          image1: "http://localhost:3000/uploads/g22/black/black1.png",
-          image2: "http://localhost:3000/uploads/g22/black/black2.png",
+          principal:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/g22/black/black.png",
+          image1:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/g22/black/black1.png",
+          image2:
+            "https://ecommerce-backend-oypk.onrender.com/uploads/g22/black/black2.png",
         },
       },
     },

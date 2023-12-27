@@ -7,7 +7,7 @@ const HeroSection = () => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/products")
+    fetch("https://ecommerce-backend-oypk.onrender.com/api/products")
       .then((response) => response.json())
       .then((json) => setData(json));
   }, []);
