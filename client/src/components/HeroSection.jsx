@@ -1,16 +1,11 @@
+import { useContext } from "react";
+import DataContext from "../DataContext";
 import BannerSection from "./BannerSection";
 import AsideSection from "../components/AsideSection";
-import { useState, useEffect } from "react";
 import ProductCard from "./ProductCard";
 
 const HeroSection = () => {
-  const [data, setData] = useState(null);
-
-  useEffect(() => {
-    fetch("https://ecommerce-backend-oypk.onrender.com/api/products")
-      .then((response) => response.json())
-      .then((json) => setData(json));
-  }, []);
+  const { data } = useContext(DataContext);
 
   console.log(data);
   return (
@@ -31,10 +26,10 @@ const HeroSection = () => {
           </div>
 
           <div className="w-full max-w-[1300px] h-auto flex justify-evenly p-5 mb-10">
-            <ProductCard data={data?.Samsung[0]} />
-            <ProductCard data={data?.Samsung[1]} />
-            <ProductCard data={data?.Samsung[2]} />
-            <ProductCard data={data?.Samsung[3]} />
+            <ProductCard data={data?.Samsung?.[0]} />
+            <ProductCard data={data?.Samsung?.[1]} />
+            <ProductCard data={data?.Samsung?.[2]} />
+            <ProductCard data={data?.Samsung?.[3]} />
           </div>
           <div className="w-full max-w-[1300px] flex justify-start px-10 xl:px-16">
             <span className="font-bold text-[20px] font-sans cursor-pointer">
@@ -42,10 +37,10 @@ const HeroSection = () => {
             </span>
           </div>
           <div className="w-full max-w-[1300px] h-auto flex justify-evenly p-5 mb-10">
-            <ProductCard data={data?.Iphone[0]} />
-            <ProductCard data={data?.Iphone[1]} />
-            <ProductCard data={data?.Iphone[2]} />
-            <ProductCard data={data?.Iphone[3]} />
+            <ProductCard data={data?.Iphone?.[0]} />
+            <ProductCard data={data?.Iphone?.[1]} />
+            <ProductCard data={data?.Iphone?.[2]} />
+            <ProductCard data={data?.Iphone?.[3]} />
           </div>
           <div className="w-full max-w-[1300px] flex justify-start px-10 xl:px-16">
             <span className="font-bold text-[20px] font-sans cursor-pointer">
@@ -53,10 +48,10 @@ const HeroSection = () => {
             </span>
           </div>
           <div className="w-full max-w-[1300px] h-auto flex justify-evenly p-5 mb-10">
-            <ProductCard data={data?.Motorola[0]} />
-            <ProductCard data={data?.Motorola[1]} />
-            <ProductCard data={data?.Motorola[2]} />
-            <ProductCard data={data?.Motorola[3]} />
+            <ProductCard data={data?.Motorola?.[0]} />
+            <ProductCard data={data?.Motorola?.[1]} />
+            <ProductCard data={data?.Motorola?.[2]} />
+            <ProductCard data={data?.Motorola?.[3]} />
           </div>
         </div>
       </div>
