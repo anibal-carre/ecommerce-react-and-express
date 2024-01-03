@@ -1,6 +1,6 @@
 const ProductView = ({ image, color, data, setImage }) => {
   return (
-    <div className="border flex flex-col items-center">
+    <div className="flex flex-col items-center">
       {/* PRINCIPAL */}
       {image == "principal" ? (
         <>
