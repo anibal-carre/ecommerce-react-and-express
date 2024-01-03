@@ -9,7 +9,7 @@ import FoldPage from "./components/ProductsPages/samsung/FoldPage";
 import IPhone13Page from "./components/ProductsPages/iphone/IPhone13Page";
 import IPhone12Page from "./components/ProductsPages/iphone/IPhone12Page";
 import IPhone11Page from "./components/ProductsPages/iphone/IPhone11Page";
-import IPhoneXrPage from "./components/ProductsPages/iphone/IPhoneXrPage";
+import IPhoneXrPage from "./components/ProductsPages/iphone/IPhonexrPage";
 import MotoOnePage from "./components/ProductsPages/motorola/MotoOnePage";
 import MotoEdgePage from "./components/ProductsPages/motorola/MotoEdgePage";
 import MotoG22Page from "./components/ProductsPages/motorola/MotoG22Page";
