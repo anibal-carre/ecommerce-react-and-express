@@ -4,6 +4,7 @@ import CategorySection from "../../CategorySection";
 import HomeFooter from "../../Home/HomeFooter";
 import HomeHeader from "../../HomeHeader";
 import Rank from "../../Rank";
+import ProductView from "../../ProductView";
 
 const S20Page = () => {
   const { data } = useContext(DataContext);
@@ -15,83 +16,14 @@ const S20Page = () => {
       <CategorySection />
       <section className="w-full h-[800px] flex justify-center p-8 py-16 border">
         <div className="w-full max-w-[1100px] flex">
-          <div className="border flex flex-col items-center">
-            {image == "principal" ? (
-              <img
-                className="w-[190px] h-[223px] mb-5"
-                src={data?.Samsung?.[0].images?.principal}
-                alt="image"
-              />
-            ) : (
-              ""
-            )}
+          <ProductView
+            color={color}
+            image={image}
+            data={data}
+            setImage={setImage}
+          />
 
-            {image == "image1" ? (
-              <img
-                className="w-[190px] h-[223px] mb-5"
-                src={data?.Samsung?.[0].images?.image1}
-                alt="image"
-              />
-            ) : (
-              ""
-            )}
-
-            {image == "image2" ? (
-              <img
-                className="w-[190px] h-[223px] mb-5"
-                src={data?.Samsung?.[0].images?.image2}
-                alt="image"
-              />
-            ) : (
-              ""
-            )}
-            <div className="flex gap-2">
-              <div
-                className={`rounded-sm w-[68px] h-[68px] p-1 cursor-pointer ${
-                  image == "principal"
-                    ? `border border-[#ff8800]`
-                    : `border border-zinc-300 `
-                }`}
-                onClick={() => setImage("principal")}
-              >
-                <img
-                  className="w-full h-full"
-                  src={data?.Samsung?.[0].images.principal}
-                  alt="image1"
-                />
-              </div>
-              <div
-                className={`rounded-sm w-[68px] h-[68px] p-1 cursor-pointer ${
-                  image == "image1"
-                    ? `border border-[#ff8800]`
-                    : `border border-zinc-300 `
-                }`}
-                onClick={() => setImage("image1")}
-              >
-                <img
-                  className="w-full h-full"
-                  src={data?.Samsung?.[0].images.image1}
-                  alt="image2"
-                />
-              </div>
-              <div
-                className={`rounded-sm w-[68px] h-[68px] p-1 cursor-pointer ${
-                  image == "image2"
-                    ? `border border-[#ff8800]`
-                    : `border border-zinc-300 `
-                }`}
-                onClick={() => setImage("image2")}
-              >
-                <img
-                  className="w-full h-full"
-                  src={data?.Samsung?.[0].images.image2}
-                  alt="image3"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div className="w-[700px] px-10 py-5 border">
+          <div className="w-[700px] px-10 py-5 border border-green-500">
             <h2 className="text-[25px] font-[600] font-sans text-zinc-600 mb-1">
               {data?.Samsung?.[0].name}
             </h2>
@@ -99,31 +31,56 @@ const S20Page = () => {
             <Rank rank={data?.Samsung?.[0].ranking} />
 
             <span className="font-[500] text-zinc-600">
-              Cor: <span className="text-[#ff8800] font-[500]">Azul</span>
+              Cor:{" "}
+              <span className="text-[#ff8800] font-[500]">
+                {color == "principal" ? "Azul" : ""}
+                {color == "mint" ? "Menta" : ""}
+                {color == "lavander" ? "Lavanda" : ""}
+              </span>
             </span>
 
-            <div className="flex gap-2">
+            <div className="flex items-center gap-2 border border-blue-500 mt-4">
               <div
-                className={`w-[36px] h-[36px] bg-slate-500 rounded-full mt-4 ${
+                className={`w-[42px] h-[42px] flex justify-center items-center bg-white border rounded-full ${
                   color == "principal" ? `border border-[#ff8800]` : ""
                 }`}
                 onClick={() => setColor("principal")}
-              ></div>
+              >
+                <div
+                  className={`w-[36px] h-[36px] bg-slate-500 rounded-full `}
+                ></div>
+              </div>
               <div
-                className={`w-[36px] h-[36px] bg-[#967bb6] rounded-full mt-4 ${
+                className={`w-[42px] h-[42px] flex justify-center items-center bg-white border rounded-full ${
                   color == "lavander" ? `border border-[#ff8800]` : ""
                 }`}
                 onClick={() => setColor("lavander")}
-              ></div>
+              >
+                <div
+                  className={`w-[36px] h-[36px] bg-[#ddadd4] rounded-full `}
+                ></div>
+              </div>
               <div
-                className={`w-[36px] h-[36px] bg-[#98ff98] rounded-full mt-4 ${
+                className={`w-[42px] h-[42px] flex justify-center items-center bg-white border rounded-full ${
                   color == "mint" ? `border border-[#ff8800]` : ""
                 }`}
                 onClick={() => setColor("mint")}
-              ></div>
+              >
+                <div
+                  className={`w-[36px] h-[36px] bg-[#98ff98] rounded-full `}
+                ></div>
+              </div>
+            </div>
+
+            <div className="flex flex-col w-full h-[100px] border border-red-500 mt-5">
+              <span className="font-[500] text-zinc-600">Capacidade</span>
+
+              <div className="w-full mt-2">
+                <button className="w-[83px] h-[40px] border border-zinc-300 rounded-[3px]"></button>
+              </div>
             </div>
           </div>
-          <div className="w-[200px] border"></div>
+          <div className="w-[200px] border">hello</div>
         </div>
       </section>
       <HomeFooter />

@@ -2,7 +2,7 @@ const productsDb = {
   Iphone: [
     {
       id: 1,
-      name: "iPhone 13 PRO 512 GB",
+      name: "iPhone 13 PRO",
       price: 6000,
       brand: "Apple",
       description:
@@ -10,6 +10,7 @@ const productsDb = {
       outstanding: false,
       ranking: 4,
       promotion: true,
+      capacity: ["128 GB", "256 GB", "512 GB", "1 TB"],
       images: {
         principal:
           "https://ecommerce-backend-oypk.onrender.com/uploads/iphone13/iphone13.png",
@@ -38,7 +39,7 @@ const productsDb = {
     },
     {
       id: 2,
-      name: "iPhone 12 128 GB",
+      name: "iPhone 12",
       price: 6000,
       brand: "Apple",
       description:
@@ -46,6 +47,7 @@ const productsDb = {
       outstanding: false,
       ranking: 4,
       promotion: true,
+      capacity: ["64 GB", "128 GB", "256 GB"],
       images: {
         principal:
           "https://ecommerce-backend-oypk.onrender.com/uploads/iphone12/iphone.png",
@@ -80,7 +82,7 @@ const productsDb = {
     },
     {
       id: 3,
-      name: "iPhone 11 Pro 256 GB",
+      name: "iPhone 11 Pro ",
       price: 6000,
       brand: "Apple",
       description:
@@ -88,6 +90,7 @@ const productsDb = {
       outstanding: false,
       ranking: 4,
       promotion: true,
+      capacity: ["64 GB", "256 GB", "512 GB"],
       images: {
         principal:
           "https://ecommerce-backend-oypk.onrender.com/uploads/iphone11/iphone11.png",
@@ -116,7 +119,7 @@ const productsDb = {
     },
     {
       id: 4,
-      name: "iPhone XR 64 GB",
+      name: "iPhone XR",
       price: 6000,
       brand: "Apple",
       description:
@@ -124,6 +127,7 @@ const productsDb = {
       outstanding: false,
       ranking: 3,
       promotion: true,
+      capacity: ["64 GB", "128 GB", "256 GB"],
       images: {
         principal:
           "https://ecommerce-backend-oypk.onrender.com/uploads/iphonexr/iphonexr.png",
@@ -170,6 +174,7 @@ const productsDb = {
       outstanding: false,
       ranking: 3,
       promotion: true,
+      capacity: ["128 GB", "256 GB"],
       images: {
         principal:
           "https://ecommerce-backend-oypk.onrender.com/uploads/s20fe/s20fe.png",
@@ -205,6 +210,7 @@ const productsDb = {
       outstanding: true,
       ranking: 5,
       promotion: true,
+      capacity: ["128 GB", "256 GB", "512 GB", "1 TB"],
       images: {
         principal:
           "https://ecommerce-backend-oypk.onrender.com/uploads/s23ultra/s23ultra.png",
@@ -216,7 +222,7 @@ const productsDb = {
     },
     {
       id: 3,
-      name: "Samsung Galaxy S23 5G 128 GB",
+      name: "Samsung Galaxy S23 5G",
       price: 5000,
       brand: "Samsung",
       description:
@@ -224,6 +230,7 @@ const productsDb = {
       outstanding: false,
       ranking: 5,
       promotion: true,
+      capacity: ["128 GB", "256 GB"],
       images: {
         principal:
           "https://ecommerce-backend-oypk.onrender.com/uploads/s23/s23.png",
@@ -259,6 +266,7 @@ const productsDb = {
       outstanding: false,
       ranking: 5,
       promotion: false,
+      capacity: ["256 GB", "512 GB", "1 TB"],
       images: {
         principal:
           "https://ecommerce-backend-oypk.onrender.com/uploads/galaxyfold/galaxyfold.png",
@@ -272,7 +280,7 @@ const productsDb = {
   Motorola: [
     {
       id: 1,
-      name: "Motorola Moto G 5G 128 GB ",
+      name: "Motorola Moto G",
       price: 12000,
       brand: "Motorola",
       description:
@@ -280,6 +288,7 @@ const productsDb = {
       outstanding: false,
       ranking: 3,
       promotion: false,
+      capacity: ["128 GB", "256 GB"],
       images: {
         principal:
           "https://ecommerce-backend-oypk.onrender.com/uploads/motog/motog1.png",
@@ -291,7 +300,7 @@ const productsDb = {
     },
     {
       id: 2,
-      name: "Motorola Moto One Vision 128 GB",
+      name: "Motorola Moto One Vision",
       price: 11000,
       brand: "Motorola",
       description:
@@ -299,6 +308,7 @@ const productsDb = {
       outstanding: false,
       ranking: 4,
       promotion: false,
+      capacity: ["128 GB", "256 GB"],
       images: {
         principal:
           "https://ecommerce-backend-oypk.onrender.com/uploads/onevision/onevision1.png",
@@ -318,7 +328,7 @@ const productsDb = {
     },
     {
       id: 3,
-      name: "Motorola Edge 20 128 GB",
+      name: "Motorola Edge 20",
       price: 15000,
       brand: "Motorola",
       description:
@@ -326,6 +336,7 @@ const productsDb = {
       outstanding: false,
       ranking: 3,
       promotion: false,
+      capacity: ["128 GB", "256 GB", "512 GB"],
       images: {
         principal:
           "https://ecommerce-backend-oypk.onrender.com/uploads/edge20/edge20.png",
@@ -361,6 +372,7 @@ const productsDb = {
       outstanding: false,
       ranking: 3,
       promotion: false,
+      capacity: ["128 GB", "256 GB"],
       images: {
         principal:
           "https://ecommerce-backend-oypk.onrender.com/uploads/g22/g22.png",
