@@ -4,6 +4,7 @@ import DataContext from "./DataContext";
 
 const DataProvider = ({ children }) => {
   const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     // Hacer la solicitud a la API externa aquí
@@ -14,6 +15,9 @@ const DataProvider = ({ children }) => {
         );
         const result = await response.json();
         setData(result);
+        setTimeout(() => {
+          setLoading(false);
+        }, 2000);
       } catch (error) {
         console.error("Error al obtener datos de la API:", error);
       }
@@ -23,7 +27,9 @@ const DataProvider = ({ children }) => {
   }, []);
 
   return (
-    <DataContext.Provider value={{ data }}>{children}</DataContext.Provider>
+    <DataContext.Provider value={{ data, loading }}>
+      {children}
+    </DataContext.Provider>
   );
 };
 

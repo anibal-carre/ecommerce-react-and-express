@@ -16,7 +16,6 @@ import MotoG22Page from "./components/ProductsPages/motorola/MotoG22Page";
 import MotoGPage from "./components/ProductsPages/motorola/MotoGPage";
 
 function App() {
-  const [text, setText] = useState("");
   return (
     <DataProvider>
       <BrowserRouter>
