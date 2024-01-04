@@ -26,10 +26,10 @@ function App() {
           {/*Products Pages */}
 
           {/*Samsung */}
-          <Route path="/smartphones/samung/s20fe" element={<S20Page />} />
-          <Route path="/smartphones/samung/s23ultra" element={<S23UPage />} />
-          <Route path="/smartphones/samung/s23" element={<S23Page />} />
-          <Route path="/smartphones/samung/fold" element={<FoldPage />} />
+          <Route path="/smartphones/samsung/s20fe" element={<S20Page />} />
+          <Route path="/smartphones/samsung/s23ultra" element={<S23UPage />} />
+          <Route path="/smartphones/samsung/s23" element={<S23Page />} />
+          <Route path="/smartphones/samsung/fold" element={<FoldPage />} />
 
           {/*iPhone */}
           <Route

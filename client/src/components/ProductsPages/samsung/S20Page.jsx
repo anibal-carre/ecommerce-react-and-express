@@ -66,7 +66,7 @@ const S20Page = () => {
             )}
 
             {!loading ? (
-              <div className="flex items-center gap-2 border border-blue-500 mt-4">
+              <div className="flex items-center gap-2 mt-4">
                 <div
                   className={`w-[42px] h-[42px] flex justify-center items-center bg-white border rounded-full ${
                     color == "principal" ? `border border-[#ff8800]` : ""
@@ -105,7 +105,7 @@ const S20Page = () => {
             )}
 
             {!loading ? (
-              <div className="flex flex-col w-full h-[100px] border border-red-500 mt-5">
+              <div className="flex flex-col w-full h-[100px] mt-5">
                 <span className="font-[500] text-zinc-600">Capacidade</span>
 
                 <div className="w-full mt-2 flex gap-4">
@@ -137,12 +137,13 @@ const S20Page = () => {
               </SkeletonTheme>
             )}
             {!loading ? (
-              <div className="flex flex-col w-full h-[130px] border border-red-500 mt-8">
+              <div className="flex flex-col w-full h-[130px] mt-8">
                 <span className="font-[500] text-zinc-600 mb-2">
                   Condição: <span className="font-[400]">{condition}</span>
                 </span>
 
                 <div className="w-full mt-2 flex gap-4">
+                  {/* Condition Buttons */}
                   <button
                     className={`w-[180px] h-[75px] flex flex-col justify-center items-center font-[500]  rounded-[3px] shadow-sm ${
                       condition == "excelente"
@@ -152,7 +153,16 @@ const S20Page = () => {
                     onClick={() => setCondition("excelente")}
                   >
                     <span className="text-[14px] font-[500]">Excelente</span>
-                    <span className="text-[12px] font-[400]">{`R$ ${data?.Samsung?.[0].price.toLocaleString()},00`}</span>
+                    <span className="text-[12px] font-[400]">
+                      {capacity == "128 GB"
+                        ? `R$ ${data?.Samsung?.[0].price.toLocaleString()},00`
+                        : ""}
+                      {capacity == "256 GB"
+                        ? `R$ ${(
+                            data?.Samsung?.[0].price * 1.3
+                          ).toLocaleString()},00`
+                        : ""}
+                    </span>
                   </button>
                   <button
                     className={`w-[180px] h-[75px] flex flex-col justify-center items-center font-[500]  rounded-[3px] shadow-sm ${
@@ -163,9 +173,16 @@ const S20Page = () => {
                     onClick={() => setCondition("muito bom")}
                   >
                     <span className="text-[14px] font-[500]">Muito Bom</span>
-                    <span className="text-[12px] font-[400]">{`R$ ${(
-                      data?.Samsung?.[0].price - 300
-                    ).toLocaleString()},00`}</span>
+                    <span className="text-[12px] font-[400]">
+                      {capacity == "128 GB"
+                        ? `R$ ${(
+                            data?.Samsung?.[0].price - 300
+                          ).toLocaleString()},00`
+                        : `R$ ${(
+                            (data?.Samsung?.[0].price - 300) *
+                            1.3
+                          ).toLocaleString()},00`}
+                    </span>
                   </button>
                   <button
                     className={`w-[180px] h-[75px] flex flex-col justify-center items-center font-[500]  rounded-[3px] shadow-sm ${
@@ -176,9 +193,16 @@ const S20Page = () => {
                     onClick={() => setCondition("bom")}
                   >
                     <span className="text-[14px] font-[500]">Bom</span>
-                    <span className="text-[12px] font-[400]">{`R$ ${(
-                      data?.Samsung?.[0].price - 500
-                    ).toLocaleString()},00`}</span>
+                    <span className="text-[12px] font-[400]">
+                      {capacity == "128 GB"
+                        ? `R$ ${(
+                            data?.Samsung?.[0].price - 500
+                          ).toLocaleString()},00`
+                        : `R$ ${(
+                            (data?.Samsung?.[0].price - 500) *
+                            1.2
+                          ).toLocaleString()},00`}
+                    </span>
                   </button>
                 </div>
 
@@ -191,10 +215,50 @@ const S20Page = () => {
             )}
           </div>
           <div className="w-[230px] flex flex-col border rounded-[3px] py-4 px-3">
+            {/* Offer */}
             {!loading ? (
               <span className="flex items-center gap-2 text-[17px] font-[600]">
                 <span className="text-zinc-400 line-through">
-                  {`R$ ${(data?.Samsung?.[0].price * 1.3).toLocaleString()},00`}
+                  {/* Excelente */}
+                  {condition == "excelente" && capacity == "128 GB"
+                    ? `R$ ${(
+                        data?.Samsung?.[0].price * 1.3
+                      ).toLocaleString()},00`
+                    : ""}
+                  {condition == "excelente" && capacity == "256 GB"
+                    ? `R$ ${(
+                        data?.Samsung?.[0].price * 1.5
+                      ).toLocaleString()},00`
+                    : ""}
+                  {/* Muito Bom */}
+                  {condition == "muito bom" && capacity == "128 GB"
+                    ? `R$ ${(
+                        (data?.Samsung?.[0].price - 300) *
+                        1.3
+                      ).toLocaleString()},00`
+                    : ""}
+
+                  {condition == "muito bom" && capacity == "256 GB"
+                    ? `R$ ${(
+                        (data?.Samsung?.[0].price - 300) *
+                        1.5
+                      ).toLocaleString()},00`
+                    : ""}
+                  {/* Bom */}
+
+                  {condition == "bom" && capacity == "128 GB"
+                    ? `R$ ${(
+                        (data?.Samsung?.[0].price - 500) *
+                        1.15
+                      ).toLocaleString()},00`
+                    : ""}
+
+                  {condition == "bom" && capacity == "256 GB"
+                    ? `R$ ${(
+                        (data?.Samsung?.[0].price - 500) *
+                        1.25
+                      ).toLocaleString()},00`
+                    : ""}
                 </span>
                 <span className="w-[50px] flex items-center justify-center rounded-[3px] bg-[#ff8800] text-white text-[15px]">
                   - 15%
@@ -206,8 +270,42 @@ const S20Page = () => {
               </SkeletonTheme>
             )}
 
+            {/* FINAL PRICE */}
+
             {!loading ? (
-              <span className="text-[32px] font-[700] text-zinc-700">{`R$ ${data?.Samsung?.[0].price.toLocaleString()},00`}</span>
+              <span className="text-[32px] font-[700] text-zinc-700">
+                {/* CONDITION = EXCELENTE */}
+                {condition == "excelente" && capacity == "128 GB"
+                  ? `R$ ${data?.Samsung?.[0].price.toLocaleString()},00`
+                  : ""}
+                {condition == "excelente" && capacity == "256 GB"
+                  ? `R$ ${(data?.Samsung?.[0].price * 1.3).toLocaleString()},00`
+                  : ""}
+
+                {/* CONDITION = MUITO BOM */}
+
+                {condition == "muito bom" && capacity == "128 GB"
+                  ? `R$ ${(data?.Samsung?.[0].price - 300).toLocaleString()},00`
+                  : ""}
+                {condition == "muito bom" && capacity == "256 GB"
+                  ? `R$ ${(
+                      (data?.Samsung?.[0].price - 300) *
+                      1.3
+                    ).toLocaleString()},00`
+                  : ""}
+
+                {/* CONDITION = BOM */}
+
+                {condition == "bom" && capacity == "128 GB"
+                  ? `R$ ${(data?.Samsung?.[0].price - 500).toLocaleString()},00`
+                  : ""}
+                {condition == "bom" && capacity == "256 GB"
+                  ? `R$ ${(
+                      (data?.Samsung?.[0].price - 500) *
+                      1.2
+                    ).toLocaleString()},00`
+                  : ""}
+              </span>
             ) : (
               <SkeletonTheme>
                 <Skeleton count={1} />
@@ -227,9 +325,53 @@ const S20Page = () => {
             {!loading ? (
               <span className="mt-2 font-[500]">
                 ou{" "}
-                <span className="text-zinc-400 font-[600] text-[17px]">{`R$ ${(
-                  data?.Samsung?.[0].price * 1.1
-                ).toLocaleString()},00`}</span>
+                <span className="text-zinc-400 font-[600] text-[17px]">
+                  {/* CONDITION = EXCELENTE */}
+                  {condition == "excelente" && capacity == "128 GB"
+                    ? `R$ ${(
+                        data?.Samsung?.[0].price * 1.1
+                      ).toLocaleString()},00`
+                    : ""}
+                  {condition == "excelente" && capacity == "256 GB"
+                    ? `R$ ${(
+                        data?.Samsung?.[0].price *
+                        1.3 *
+                        1.08
+                      ).toLocaleString()},00`
+                    : ""}
+
+                  {/* CONDITION = MUITO BOM */}
+
+                  {condition == "muito bom" && capacity == "128 GB"
+                    ? `R$ ${(
+                        (data?.Samsung?.[0].price - 300) *
+                        1.1
+                      ).toLocaleString()},00`
+                    : ""}
+                  {condition == "muito bom" && capacity == "256 GB"
+                    ? `R$ ${(
+                        (data?.Samsung?.[0].price - 300) *
+                        1.3 *
+                        1.08
+                      ).toLocaleString()},00`
+                    : ""}
+
+                  {/* CONDITION = BOM */}
+
+                  {condition == "bom" && capacity == "128 GB"
+                    ? `R$ ${(
+                        (data?.Samsung?.[0].price - 500) *
+                        1.1
+                      ).toLocaleString()},00`
+                    : ""}
+                  {condition == "bom" && capacity == "256 GB"
+                    ? `R$ ${(
+                        (data?.Samsung?.[0].price - 500) *
+                        1.2 *
+                        1.01
+                      ).toLocaleString()},00`
+                    : ""}
+                </span>
               </span>
             ) : (
               <SkeletonTheme>
@@ -240,10 +382,45 @@ const S20Page = () => {
               <span className="font-[400] text-[14px]">
                 Até{" "}
                 <span className="font-[600]">
-                  12x de{" "}
-                  {`R$ ${(data?.Samsung?.[0].price / 12)
-                    .toFixed(2)
-                    .toLocaleString()}`}{" "}
+                  12x de {/* CONDITION = EXCELENTE */}
+                  {condition == "excelente" && capacity == "128 GB"
+                    ? `R$ ${((data?.Samsung?.[0].price * 1.1) / 12)
+                        .toFixed(2)
+                        .toLocaleString()}`
+                    : ""}
+                  {condition == "excelente" && capacity == "256 GB"
+                    ? `R$ ${((data?.Samsung?.[0].price * 1.3 * 1.08) / 12)
+                        .toFixed(2)
+                        .toLocaleString()}`
+                    : ""}
+                  {/* CONDITION = MUITO BOM */}
+                  {condition == "muito bom" && capacity == "128 GB"
+                    ? `R$ ${(((data?.Samsung?.[0].price - 300) * 1.1) / 12)
+                        .toFixed(2)
+                        .toLocaleString()}`
+                    : ""}
+                  {condition == "muito bom" && capacity == "256 GB"
+                    ? `R$ ${(
+                        ((data?.Samsung?.[0].price - 300) * 1.3 * 1.08) /
+                        12
+                      )
+                        .toFixed(2)
+                        .toLocaleString()}`
+                    : ""}
+                  {/* CONDITION = BOM */}
+                  {condition == "bom" && capacity == "128 GB"
+                    ? `R$ ${(((data?.Samsung?.[0].price - 500) * 1.1) / 12)
+                        .toFixed(2)
+                        .toLocaleString()}`
+                    : ""}
+                  {condition == "bom" && capacity == "256 GB"
+                    ? `R$ ${(
+                        ((data?.Samsung?.[0].price - 500) * 1.2 * 1.01) /
+                        12
+                      )
+                        .toFixed(2)
+                        .toLocaleString()}`
+                    : ""}{" "}
                 </span>
                 sem juros
               </span>

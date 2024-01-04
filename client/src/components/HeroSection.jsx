@@ -26,10 +26,30 @@ const HeroSection = () => {
           </div>
 
           <div className="w-full max-w-[1300px] h-auto flex justify-evenly p-5 mb-10">
-            <ProductCard loading={loading} data={data?.Samsung?.[0]} />
-            <ProductCard loading={loading} data={data?.Samsung?.[1]} />
-            <ProductCard loading={loading} data={data?.Samsung?.[2]} />
-            <ProductCard loading={loading} data={data?.Samsung?.[3]} />
+            <ProductCard
+              loading={loading}
+              data={data?.Samsung?.[0]}
+              brand={"samsung"}
+              name={"s20fe"}
+            />
+            <ProductCard
+              loading={loading}
+              data={data?.Samsung?.[1]}
+              brand={"samsung"}
+              name={"s23ultra"}
+            />
+            <ProductCard
+              loading={loading}
+              data={data?.Samsung?.[2]}
+              brand={"samsung"}
+              name={"s23"}
+            />
+            <ProductCard
+              loading={loading}
+              data={data?.Samsung?.[3]}
+              brand={"samsung"}
+              name={"fold"}
+            />
           </div>
           <div className="w-full max-w-[1300px] flex justify-start px-10 xl:px-16">
             <span className="font-bold text-[20px] font-sans cursor-pointer">
@@ -37,10 +57,30 @@ const HeroSection = () => {
             </span>
           </div>
           <div className="w-full max-w-[1300px] h-auto flex justify-evenly p-5 mb-10">
-            <ProductCard loading={loading} data={data?.Iphone?.[0]} />
-            <ProductCard loading={loading} data={data?.Iphone?.[1]} />
-            <ProductCard loading={loading} data={data?.Iphone?.[2]} />
-            <ProductCard loading={loading} data={data?.Iphone?.[3]} />
+            <ProductCard
+              loading={loading}
+              data={data?.Iphone?.[0]}
+              brand={"iphone"}
+              name={"iphone13"}
+            />
+            <ProductCard
+              loading={loading}
+              data={data?.Iphone?.[1]}
+              brand={"iphone"}
+              name={"iphone12"}
+            />
+            <ProductCard
+              loading={loading}
+              data={data?.Iphone?.[2]}
+              brand={"iphone"}
+              name={"iphone11"}
+            />
+            <ProductCard
+              loading={loading}
+              data={data?.Iphone?.[3]}
+              brand={"iphone"}
+              name={"iphonexr"}
+            />
           </div>
           <div className="w-full max-w-[1300px] flex justify-start px-10 xl:px-16">
             <span className="font-bold text-[20px] font-sans cursor-pointer">
@@ -48,10 +88,30 @@ const HeroSection = () => {
             </span>
           </div>
           <div className="w-full max-w-[1300px] h-auto flex justify-evenly p-5 mb-10">
-            <ProductCard loading={loading} data={data?.Motorola?.[0]} />
-            <ProductCard loading={loading} data={data?.Motorola?.[1]} />
-            <ProductCard loading={loading} data={data?.Motorola?.[2]} />
-            <ProductCard loading={loading} data={data?.Motorola?.[3]} />
+            <ProductCard
+              loading={loading}
+              data={data?.Motorola?.[0]}
+              brand={"motorola"}
+              name={"motog"}
+            />
+            <ProductCard
+              loading={loading}
+              data={data?.Motorola?.[1]}
+              brand={"motorola"}
+              name={"motoone"}
+            />
+            <ProductCard
+              loading={loading}
+              data={data?.Motorola?.[2]}
+              brand={"motorola"}
+              name={"motoedge"}
+            />
+            <ProductCard
+              loading={loading}
+              data={data?.Motorola?.[3]}
+              brand={"motorola"}
+              name={"motog22"}
+            />
           </div>
         </div>
       </div>

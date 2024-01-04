@@ -1,9 +1,14 @@
+import { useNavigate } from "react-router-dom";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 
-const ProductCard = ({ data, loading }) => {
+const ProductCard = ({ data, loading, brand, name }) => {
+  const navigate = useNavigate();
   return (
-    <div className="border flex flex-col items-center bg-white w-[180px] h-[370px] rounded-[2px] shadow-sm shadow-black cursor-pointer hover:scale-105 transition-all delay-75 p-4">
+    <div
+      onClick={() => navigate(`/smartphones/${brand}/${name}`)}
+      className="border flex flex-col items-center bg-white w-[180px] h-[370px] rounded-[2px] shadow-sm shadow-black cursor-pointer hover:scale-105 transition-all delay-75 p-4"
+    >
       <div className="flex justify-center items-center">
         {!loading ? (
           <img

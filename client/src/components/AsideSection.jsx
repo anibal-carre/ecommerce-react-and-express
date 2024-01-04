@@ -1,6 +1,6 @@
 const AsideSection = () => {
   return (
-    <aside className="flex flex-col w-[245px] border border-zinc-300 bg-white h-full px-2 py-8">
+    <aside className="hidden md:flex md:flex-col md:w-[245px] md:border md:border-zinc-300 md:bg-white md:h-full md:px-2 md:py-8">
       {/* Categoria */}
 
       <span className="font-[500] text-[18px] ml-2 mt-5 mb-1">Categoria</span>
