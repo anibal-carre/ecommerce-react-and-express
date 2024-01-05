@@ -29,8 +29,6 @@ const S20Page = () => {
             data={data}
             setImage={setImage}
             loading={loading}
-            color1={"lavander"}
-            color2={"mint"}
           />
 
           <div className="w-[700px] px-10 py-5">
