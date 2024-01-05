@@ -1,7 +1,7 @@
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 
-const ProductView = ({ image, color, data, setImage, loading }) => {
+const ProductViewS20Fe = ({ image, color, data, setImage, loading }) => {
   return (
     <div className="flex flex-col items-center">
       {/* PRINCIPAL */}
@@ -134,7 +134,15 @@ const ProductView = ({ image, color, data, setImage, loading }) => {
           {!loading ? (
             <img
               className="w-full h-full"
-              src={data?.Samsung?.[0].images.principal}
+              src={
+                color == "principal"
+                  ? data?.Samsung?.[0].images.principal
+                  : "" || color == "lavander"
+                  ? data?.Samsung?.[0].images.lavander.principal
+                  : "" || color == "mint"
+                  ? data?.Samsung?.[0].images.mint.principal
+                  : ""
+              }
               alt="image1"
             />
           ) : (
@@ -156,7 +164,15 @@ const ProductView = ({ image, color, data, setImage, loading }) => {
           {!loading ? (
             <img
               className="w-full h-full"
-              src={data?.Samsung?.[0].images.image1}
+              src={
+                color == "principal"
+                  ? data?.Samsung?.[0].images.image1
+                  : "" || color == "lavander"
+                  ? data?.Samsung?.[0].images.lavander.image1
+                  : "" || color == "mint"
+                  ? data?.Samsung?.[0].images.mint.image1
+                  : ""
+              }
               alt="image2"
             />
           ) : (
@@ -178,7 +194,15 @@ const ProductView = ({ image, color, data, setImage, loading }) => {
           {!loading ? (
             <img
               className="w-full h-full"
-              src={data?.Samsung?.[0].images.image2}
+              src={
+                color == "principal"
+                  ? data?.Samsung?.[0].images.image2
+                  : "" || color == "lavander"
+                  ? data?.Samsung?.[0].images.lavander.image2
+                  : "" || color == "mint"
+                  ? data?.Samsung?.[0].images.mint.image2
+                  : ""
+              }
               alt="image3"
             />
           ) : (
@@ -194,4 +218,4 @@ const ProductView = ({ image, color, data, setImage, loading }) => {
   );
 };
 
-export default ProductView;
+export default ProductViewS20Fe;

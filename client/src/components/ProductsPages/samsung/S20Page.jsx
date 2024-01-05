@@ -4,7 +4,7 @@ import CategorySection from "../../CategorySection";
 import HomeFooter from "../../Home/HomeFooter";
 import HomeHeader from "../../HomeHeader";
 import Rank from "../../Rank";
-import ProductView from "../../ProductView";
+import ProductViewS20Fe from "../../ProductView/ProductViewS20Fe";
 import TruckIcon from "../../icons/TruckIcon";
 import CheckIcon from "../../icons/CheckIcon";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
@@ -23,12 +23,14 @@ const S20Page = () => {
       <CategorySection />
       <section className="w-full h-[800px] flex justify-center p-8 py-16 border">
         <div className="w-full max-w-[1100px] flex">
-          <ProductView
+          <ProductViewS20Fe
             color={color}
             image={image}
             data={data}
             setImage={setImage}
             loading={loading}
+            color1={"lavander"}
+            color2={"mint"}
           />
 
           <div className="w-[700px] px-10 py-5">
