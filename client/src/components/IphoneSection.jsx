@@ -21,10 +21,6 @@ const IphoneSection = () => {
             <AsideSection />
           </div>
           <div className="flex flex-col w-full max-w-[1800px] h-full">
-            <div className="max-w-[1800px] w-full h-full flex gap-5 justify-center mb-5">
-              <BannerSection />
-            </div>
-
             <div className="w-full max-w-[1300px] flex justify-start px-10 xl:px-16">
               <span className="font-bold text-[20px] font-sans cursor-pointer">
                 iPhone
