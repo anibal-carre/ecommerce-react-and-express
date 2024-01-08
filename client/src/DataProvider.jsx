@@ -7,7 +7,6 @@ const DataProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Hacer la solicitud a la API externa aquí
     const fetchData = async () => {
       try {
         const response = await fetch(
