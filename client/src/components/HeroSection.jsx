@@ -21,6 +21,37 @@ const HeroSection = () => {
 
           <div className="w-full max-w-[1300px] flex justify-start px-10 xl:px-16">
             <span className="font-bold text-[20px] font-sans cursor-pointer">
+              iPhone
+            </span>
+          </div>
+          <div className="w-full max-w-[1300px] h-auto flex justify-evenly p-5 mb-10">
+            <ProductCard
+              loading={loading}
+              data={data?.Iphone?.[0]}
+              brand={"iphone"}
+              name={"iphone13"}
+            />
+            <ProductCard
+              loading={loading}
+              data={data?.Iphone?.[1]}
+              brand={"iphone"}
+              name={"iphone12"}
+            />
+            <ProductCard
+              loading={loading}
+              data={data?.Iphone?.[2]}
+              brand={"iphone"}
+              name={"iphone11"}
+            />
+            <ProductCard
+              loading={loading}
+              data={data?.Iphone?.[3]}
+              brand={"iphone"}
+              name={"iphonexr"}
+            />
+          </div>
+          <div className="w-full max-w-[1300px] flex justify-start px-10 xl:px-16">
+            <span className="font-bold text-[20px] font-sans cursor-pointer">
               Samsung
             </span>
           </div>
@@ -49,37 +80,6 @@ const HeroSection = () => {
               data={data?.Samsung?.[3]}
               brand={"samsung"}
               name={"fold"}
-            />
-          </div>
-          <div className="w-full max-w-[1300px] flex justify-start px-10 xl:px-16">
-            <span className="font-bold text-[20px] font-sans cursor-pointer">
-              iPhone
-            </span>
-          </div>
-          <div className="w-full max-w-[1300px] h-auto flex justify-evenly p-5 mb-10">
-            <ProductCard
-              loading={loading}
-              data={data?.Iphone?.[0]}
-              brand={"iphone"}
-              name={"iphone13"}
-            />
-            <ProductCard
-              loading={loading}
-              data={data?.Iphone?.[1]}
-              brand={"iphone"}
-              name={"iphone12"}
-            />
-            <ProductCard
-              loading={loading}
-              data={data?.Iphone?.[2]}
-              brand={"iphone"}
-              name={"iphone11"}
-            />
-            <ProductCard
-              loading={loading}
-              data={data?.Iphone?.[3]}
-              brand={"iphone"}
-              name={"iphonexr"}
             />
           </div>
           <div className="w-full max-w-[1300px] flex justify-start px-10 xl:px-16">

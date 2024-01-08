@@ -1,26 +1,44 @@
+import { Link } from "react-router-dom";
+
 const CategorySection = () => {
   return (
     <section className="w-full h-[60px] flex items-center justify-center border mt-5 shadow-sm shadow-zinc-800">
       <ul className="w-full max-w-[900px] h-full flex justify-between items-center">
         <li>
-          <span className="text-[15px] font-sans cursor-pointer hover:underline duration-200 hover:delay-200">
+          <Link
+            className="text-[15px] font-sans cursor-pointer hover:underline duration-200 hover:delay-200"
+            to="/"
+          >
+            {" "}
             Categorias
-          </span>
+          </Link>
         </li>
         <li>
-          <span className="text-[15px] font-sans cursor-pointer hover:underline duration-200 hover:delay-200">
+          <Link
+            className="text-[15px] font-sans cursor-pointer hover:underline duration-200 hover:delay-200"
+            to="/iphone"
+          >
+            {" "}
             iPhone
-          </span>
+          </Link>
         </li>
         <li>
-          <span className="text-[15px] font-sans cursor-pointer hover:underline duration-200 hover:delay-200">
+          <Link
+            className="text-[15px] font-sans cursor-pointer hover:underline duration-200 hover:delay-200"
+            to="/samsung"
+          >
+            {" "}
             Samsung
-          </span>
+          </Link>
         </li>
         <li>
-          <span className="text-[15px] font-sans cursor-pointer hover:underline duration-200 hover:delay-200">
+          <Link
+            className="text-[15px] font-sans cursor-pointer hover:underline duration-200 hover:delay-200"
+            to="/motorola"
+          >
+            {" "}
             Motorola
-          </span>
+          </Link>
         </li>
         <li>
           <span className="text-[15px] font-sans cursor-pointer hover:underline duration-200 hover:delay-200">

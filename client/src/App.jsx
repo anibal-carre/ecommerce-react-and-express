@@ -14,6 +14,9 @@ import MotoOnePage from "./components/ProductsPages/motorola/MotoOnePage";
 import MotoEdgePage from "./components/ProductsPages/motorola/MotoEdgePage";
 import MotoG22Page from "./components/ProductsPages/motorola/MotoG22Page";
 import MotoGPage from "./components/ProductsPages/motorola/MotoGPage";
+import SamsungSection from "./components/SamsungSection";
+import IphoneSection from "./components/IphoneSection";
+import MotorolaSection from "./components/MotorolaSection";
 
 function App() {
   return (
@@ -22,6 +25,12 @@ function App() {
         <Routes>
           {/* Home */}
           <Route path="/" element={<Home />} />
+
+          {/* Brands Sections */}
+
+          <Route path="/iphone" element={<IphoneSection />} />
+          <Route path="/samsung" element={<SamsungSection />} />
+          <Route path="/motorola" element={<MotorolaSection />} />
 
           {/*Products Pages */}
 
