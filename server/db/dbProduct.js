@@ -3,7 +3,7 @@ const productsDb = {
     {
       id: 1,
       name: "iPhone 13 PRO",
-      price: 6000,
+      price: 8000,
       brand: "Apple",
       description:
         "Qual é a descrição física do iPhone 13 ProEspecificações técnicas do iPhone 13 Pro. A tela do iPhone 13 Pro possui cantos arredondados que seguem um belo design curvo, e esses cantos estão dentro de um retângulo padrão. Quando medida como uma forma retangular padrão, a área visível diagonalmente da tela é menor.",
@@ -83,7 +83,7 @@ const productsDb = {
     {
       id: 3,
       name: "iPhone 11 Pro ",
-      price: 6000,
+      price: 5000,
       brand: "Apple",
       description:
         "O Apple iPhone 11 é um smartphone iOS de bom nível, ótimo para fotos, que pode satisfazer até o mais exigente dos usuários. Tem uma enorme tela Touchscreen de 6.1 polegadas com uma resolução de 1792x828 pixel que não é das mais elevadas. Sobre as características deste Apple iPhone 11 na verdade não falta nada. Começando pelo LTE 4G que permite a transferência de dados e excelente navegação na internet, além de conectividade Wi-fi e GPS. Tem também leitor multimídia, videoconferência e bluetooth. Enfatizamos a boa memória interna de 512 GB mas sem a possibilidade de expansão.",
@@ -120,7 +120,7 @@ const productsDb = {
     {
       id: 4,
       name: "iPhone XR",
-      price: 6000,
+      price: 3000,
       brand: "Apple",
       description:
         "O iPhone XR é resistente a água, salpicos e pó e foi testado em ambiente laboratorial controlado, obtendo a classificação IP67 segundo a norma IEC 60529 (até 30 minutos à profundidade máxima de 1 metro). A resistência a água, salpicos e pó não é permanente e pode diminuir com o desgaste normal.",
@@ -281,7 +281,7 @@ const productsDb = {
     {
       id: 1,
       name: "Motorola Moto G",
-      price: 12000,
+      price: 1200,
       brand: "Motorola",
       description:
         "Tem 3 câmeras traseiras de 48Mpx/8Mpx/2Mpx. Câmera frontal de 16Mpx. Processador Snapdragon 750G 5G Octa-Core de 2.2GHz com 6GB de RAM. Bateria de 5000mAh",
@@ -301,7 +301,7 @@ const productsDb = {
     {
       id: 2,
       name: "Motorola Moto One Vision",
-      price: 11000,
+      price: 1500,
       brand: "Motorola",
       description:
         "O modelo tem 16.0cm de altura e 7.1cm de largura, com peso de 181.0g. O aparelho dispõe de câmera frontal de 25.0 MP, e traseiras de 48.0 + 5.0 MP. Além de filmar em 4K, a câmera deste aparelho também oferece as tecnologias Autofoco, Câmera Dupla, Flash, HDR, Slow Motion.",
@@ -329,7 +329,7 @@ const productsDb = {
     {
       id: 3,
       name: "Motorola Edge 20",
-      price: 15000,
+      price: 3200,
       brand: "Motorola",
       description:
         "O Motorola Edge 20 é um smartphone Android avançado e abrangente em todos os pontos de vista com algumas características excelentes. Tem uma grande tela de 6.67 polegadas com uma resolução de 2400x1080 pixels. As funcionalidades oferecidas pelo Motorola Edge 20 são muitas e inovadoras. Começando pelo 5G que permite a transferência de dados e excelente navegação na internet. Enfatizamos a excelente memória interna de 128 GB mas sem a possibilidade de expansão.",
@@ -365,7 +365,7 @@ const productsDb = {
     {
       id: 4,
       name: "Motorola Moto G22 128 GB",
-      price: 10000,
+      price: 1700,
       brand: "Motorola",
       description:
         "O Motorola Moto G22 é um smartphone Android completo, que não tem muito a invejar aos mais avançados dispositivos. Surpreendente é sua tela Touchscreen de 6.5 polegadas, que coloca esse Motorola no topo de sua categoria. A resolução também é alta: 1600x720 pixel. Quanto às funções, no Motorola Moto G22 realmente não falta nada. Começando pelo conectividade Wi-fi e GPS. A transferência de dados e navegação web sao fornecidas pela rede UMTS, mas não suporta tecnologias mais recentes, tais como HSDPA. Enfatizamos a boa memória interna de 128 GB com a possibilidade de expansão.",
